@@ -84,7 +84,7 @@ class BinaryHeapAllocator:
         index = 0
         if self.bool_array[index] == True:
             raise CannotAllocateException("No ids available")
-        while index < max_val:
+        while index < max_val -1 :
             left_child_index = 2 * index + 1
             right_child_index = 2 * index + 2
             if self.bool_array[left_child_index] == False: #There's an unallocated id in the subtree
