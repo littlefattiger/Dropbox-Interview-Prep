@@ -119,7 +119,7 @@ class BinaryHeapAllocator:
                 if self.bool_array[index] == True == self.bool_array[index + 1]:
                     both_children_are_true = True
             else: #this is a right child
-                if self.bool_array[index] == True == self.bool_array[index + 1]:
+                if self.bool_array[index] == True == self.bool_array[index - 1]:
                     both_children_are_true = True
             self.bool_array[parent_index] = both_children_are_true
             index = parent_index
